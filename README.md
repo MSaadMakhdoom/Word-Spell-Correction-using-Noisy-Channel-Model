@@ -29,7 +29,7 @@ intended. This error is to be modeled using character level insert, delete, tran
 - DELETE - Correct: ”usay” Wrong: ”usy” Increment entry for ”s” and ”a” in delete table
 - SUBSTITUTE - Correct: ”usay” Wrong: ”usau” Increment entry for ”y” and ”u” in substitute table
 - TRANSPOSE - Correct: ”usay” Wrong: ”suay” Increment entry for ”u” and ”s” in transpose table
-
+## Steps
 - For calculating P(x|w) for delete and transpose tables.
 
 
