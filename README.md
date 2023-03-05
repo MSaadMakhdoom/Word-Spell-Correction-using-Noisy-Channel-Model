@@ -7,30 +7,19 @@
 # P(w|x) = P(x|w) ∗ P(w)
 
 
-(1)
-In order to get the corrected word ˆw we perform an argmax over all candidate words to pick the word with
-the highest probability. The P(x) in the denominator is common for all candidate words and can be ignored.
-This gives us Equation 2.
+- Get the corrected word ˆw we perform an argmax over all candidate words to pick the word with the highest probability. The P(x) in the denominator is common for all candidate words and can be ignored.
 
-wˆ = argmaxw ∈ candidates P(x|w) ∗ P(w) (2)
 
-3 Data
-This assignment requires two files data.txt which will serve as the corpus and misspellings.txt for generating
-error model tables. Make sure that you have access to both files before starting. data.txt is a collection of
-Roman Urdu sentences and misspellings.txt contains a list of words and their misspellings.
+# wˆ = argmaxw ∈ candidates P(x|w) ∗ P(w) (2)
 
-1
+# Data
+- generating error model tables. data.txt is a collection of Roman Urdu sentences and misspellings.txt contains a list of words and their misspellings.
 
-4 Implementation Details
-The spell corrector you will be developing contains four main components. These components correspond to
-different parts of Equation 2 and are explained below:
-
-1. Language Model P(w): The language model gives the probability of each word occurring in the vo-
-cabulary V determined using the corpus given in data.txt and any other corpus you can find. A simple
-
-unigram model should be trained using the provided file data.txt and any other corpus you can find. You
-can assume that all words given in data.txt are correctly spelled.
-2. Error Model P(x|w): This model will be used to estimate the probability of typing x when w was
+# Implementation Details
+- The spell corrector developing contains four main components.
+- 
+* Language Model P(w): The language model gives the probability of each word occurring in the vocabulary V determined using the corpus given in data.txt and any other corpus you can find. A simple unigram model should be trained using the provided file data.txt and any other corpus you can find. You can assume that all words given in data.txt are correctly spelled.
+* Error Model P(x|w): This model will be used to estimate the probability of typing x when w was
 intended. This error is to be modeled using character level insert, delete, transpose and substitute tables.
 You will be generating these tables using the provided list of common misspellings in Roman Urdu and
 any other list you can find.
