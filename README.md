@@ -1,18 +1,11 @@
-# Spell-Correction-for-Roman-Urdu
-Spell Correction for Roman Urdu
+# Spell Correction for Roman Urdu words
 
-1 Introduction
-In this assignment you will be developing spell correction for Roman Urdu. You will be correcting non-word
-errors using the Noisy Channel model. This spell correction technique has been widely used by word processors
-and is also being used by Google in its search engine. Whenever you type in a query with a misspelled word
-such as corection Google would instantly return the results for correction instead.
-2 Background
-In this assignment, you will implement a spell correction program for Roman Urdu in Python. Spell correction
-using the Noisy Channel model is based on Bayes Theorem as shown in Equation 1. Where w is the candidate
-word and x is the misspelled word.
+## Developing spell correction for Roman Urdu.Correcting non-word errors using the Noisy Channel model. This spell correction technique has been widely used by word processors and is also being used by Google in its search engine. Whenever you type in a query with a misspelled word such as corection Google would instantly return the results for correction instead.
 
-P(w|x) = P(x|w) ∗ P(w)
-P(x)
+## Implement a spell correction program for Roman Urdu in Python. Spell correction using the Noisy Channel model is based on Bayes Theorem as shown in Equation 1. Where w is the candidate word and x is the misspelled word.
+
+# P(w|x) = P(x|w) ∗ P(w)
+
 
 (1)
 In order to get the corrected word ˆw we perform an argmax over all candidate words to pick the word with
